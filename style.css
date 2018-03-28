@@ -4,6 +4,15 @@
 	box-sizing: border-box;
 }
 
+/* Extra Styling */
+p {
+	line-height: 1.5rem;
+	word-wrap: break-word;
+}
+
+/*--------------------
+	Flexbox Grid
+---------------------*/
 html {
 	/* For sticky footer */
 	height: 100%;
@@ -21,6 +30,57 @@ body {
 	color: white;
 }
 
+/*--------------------
+	Header
+---------------------*/
+
+header {
+	flex: 0 0 auto;
+
+	/* Extra */
+	background: #09E833;
+	padding: 20px 0;
+}
+
+.header-wrapper {
+	/* Constraint the content width */
+	max-width: 1000px;
+	margin: 0 auto;
+	/* grow the width to max-width */
+	flex-grow: 1;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav {
+	list-style: none;
+	
+	display: flex;
+	align-items: baseline;
+}
+
+header nav li{
+	margin-right: 15px;
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Extra style for button */
+header button {
+	border: none;
+	background: #FF5A00;
+	color: white;
+    padding: 8px 25px;
+	text-transform: uppercase;
+}
+
+/*--------------------
+	Main and Sidebar
+---------------------*/
 .main-wrapper {
 	display: flex;
 	flex: 1 0 auto;
@@ -50,6 +110,10 @@ body {
 	padding: 10px;	
 }
 
+/*--------------------
+	Footer
+---------------------*/
+
 footer {
 	flex: 0 0 auto;
 
@@ -58,6 +122,9 @@ footer {
 	padding: 10px;
 }
 
+/*--------------------
+	Responsive
+---------------------*/
 @media all and (max-width: 800px) {
 	.main-wrapper {
 		flex-direction: column;
