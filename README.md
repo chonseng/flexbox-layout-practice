@@ -1,1 +1,1 @@
-# Use CSS Flexbox to Build Responsive Sidebar and Sticky Footer
+# Use CSS Flexbox to Build Responsive Grid Layout
