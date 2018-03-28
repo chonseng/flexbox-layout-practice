@@ -49,6 +49,8 @@ header {
 	/* grow the width to max-width */
 	flex-grow: 1;
 
+	padding: 10px;
+
 	display: flex;
 	justify-content: space-between;
 }
@@ -61,7 +63,7 @@ header nav {
 }
 
 header nav li{
-	margin-right: 15px;
+	margin-left: 15px;
 }
 
 header nav a {
@@ -76,6 +78,7 @@ header button {
 	color: white;
     padding: 8px 25px;
 	text-transform: uppercase;
+	max-width: 100px;
 }
 
 /*--------------------
@@ -126,6 +129,8 @@ footer {
 	Responsive
 ---------------------*/
 @media all and (max-width: 800px) {
+
+
 	.main-wrapper {
 		flex-direction: column;
 	}
@@ -133,4 +138,19 @@ footer {
 	.sidebar {
 		flex-basis: auto;
 	}
+}
+
+@media all and (max-width: 600px) {
+	.header-wrapper {
+		flex-direction: column;	
+	}
+	
+	nav {
+		flex-direction: column;
+	}
+
+	nav li {
+		padding: 10px 0;
+	}
+
 }
