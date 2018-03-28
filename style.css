@@ -57,3 +57,13 @@ footer {
 	background: #097AFF;
 	padding: 10px;
 }
+
+@media all and (max-width: 800px) {
+	.main-wrapper {
+		flex-direction: column;
+	}
+
+	.sidebar {
+		flex-basis: auto;
+	}
+}
