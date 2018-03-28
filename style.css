@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* For sticky footer */
+	height: 100%;
+}
+
+body {
+	/* For sticky footer */
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	/* Extra */
+	background: #FFDC03;
+	font-family: sans-serif;
+	color: white;
+}
+
+.main-wrapper {
+	display: flex;
+	flex: 1 0 auto;
+}
+
+.content {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.main {
+	/* take up all the available space that's not taken by the sidebar */
+	flex-grow: 1;
+
+	/* Extra */
+	background: #FF5A00;
+	padding: 10px;
+}
+
+.sidebar {
+	/* give the sidebar a default width, and prevent it from shrinking */
+	flex-shrink: 0; 
+	flex-basis: 300px;
+
+	/* Extra */
+	background: #CA07E8;
+	padding: 10px;	
+}
+
+footer {
+	flex: 0 0 auto;
+
+	/* Extra */
+	background: #097AFF;
+	padding: 10px;
+}
